@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="mess"
+            type="com.example.administrator.mywork.FuncTion.function3.notebean"/>
+    </data>
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="14sp"
+            android:id="@+id/tvname"
+            android:text="@{mess.title}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/tvdata"
+            android:text="@{mess.date}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+        <ImageView
+            android:id="@+id/show_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>

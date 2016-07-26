@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.example.administrator.mywork"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".APP">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Base.BaseActivity"/>
+        <activity android:name=".FuncTion.function3.EditMess"/>
+        <activity android:name=".Left_Menu_Function.Query_PhoneNum"/>
+        <activity android:name=".Left_Menu_Function.Query_Identity"/>
+        <activity android:name=".Left_Menu_Function.Query_Postal"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Left_Menu_Function.Query_Driver"/>
+        <activity android:name=".Left_Menu_Function.Query_BusStation"/>
+        <activity android:name=".Left_Menu_Function.Query_BusStation_Mess"/>
+
+        <activity android:name=".Until.Multpic_pic.PhotoActivity"
+            android:launchMode="singleInstance"/>
+        <activity android:name=".Until.Multpic_pic.activity.GalleryActivity"/>
+        <activity android:name=".Until.Multpic_pic.activity.AlbumActivity"/>
+        <activity android:name=".Until.Multpic_pic.activity.ImageFile"/>
+        <activity android:name=".Until.Multpic_pic.activity.ShowAllPhoto"/>
+    </application>
+
+</manifest>

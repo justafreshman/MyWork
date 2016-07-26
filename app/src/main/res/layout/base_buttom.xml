@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="#fff"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:clipChildren="false"
+                  android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="58dip"
+            android:background="#eadbdb"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:id="@+id/first"
+              style="@style/buttom_buttom_style">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_launcher" />
+                <TextView
+                    android:id="@+id/messone"
+                    android:text="@string/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second"
+                style="@style/buttom_buttom_style">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_launcher" />
+                <TextView
+                    android:id="@+id/messtwo"
+                    android:text="@string/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/third"
+                android:layout_height="75dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_launcher" />
+
+
+
+            <LinearLayout
+                android:id="@+id/forth"
+                style="@style/buttom_buttom_style">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_launcher" />
+                <TextView
+                    android:id="@+id/messfour"
+                    android:text="@string/forth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fifth"
+                style="@style/buttom_buttom_style">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_launcher" />
+                <TextView
+                    android:id="@+id/messfive"
+                    android:text="@string/fifth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

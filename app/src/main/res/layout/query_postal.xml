@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/ivory"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/top_space"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:gravity="center_vertical"
+                android:id="@+id/spacer_select"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+            <include
+                android:visibility="gone"
+                android:id="@+id/search_postal"
+                layout="@layout/search_something"/>
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/selectcity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/showCity"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:onClick="show"
+                    android:id="@+id/choose"
+                    android:text="@string/choose"
+                    android:background="@drawable/backres"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:onClick="query"
+                    android:text="@string/query"
+                    android:id="@+id/query"
+                    android:background="@drawable/backres"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:paddingTop="10dp"
+            android:id="@+id/postal_mess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>

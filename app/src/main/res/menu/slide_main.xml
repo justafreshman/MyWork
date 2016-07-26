@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".Base.BaseActivity">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mail"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/mail"/>
+        <item
+            android:id="@+id/nav_phone"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/phone"/>
+        <item
+            android:id="@+id/nav_identity"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/identity"/>
+        <item
+            android:id="@+id/nav_Drivers_license_exam"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/Drivers_license_exam"/>
+    </group>
+
+    <item android:title="@string/about_bus">
+        <menu>
+            <item
+                android:id="@+id/sub_motor_station"
+                android:checkable="true"
+                android:icon="@mipmap/ic_launcher"
+                android:title="@string/motor_station"/>
+            <item
+                android:id="@+id/sub_motor_station_mess"
+                android:checkable="true"
+                android:icon="@mipmap/ic_launcher"
+                android:title="@string/motor_station_mess"/>
+        </menu>
+    </item>
+</menu>

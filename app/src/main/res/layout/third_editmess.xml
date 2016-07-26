@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/title"
+            android:layout_marginTop="20dp"
+            android:background="@color/lightyellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="标题"/>
+        <EditText
+            android:layout_below="@+id/title"
+            android:gravity="left"
+            android:hint="内容"
+            android:id="@+id/content"
+            android:layout_marginTop="5dp"
+            android:background="@color/lightcyan"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <android.support.v7.widget.RecyclerView
+            android:background="#d5e685"
+            android:id="@+id/pic_list"
+            android:layout_below="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/select_pic"
+                android:text="选择图片"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+            <Button
+                android:id="@+id/btn_save"
+                android:text="保存"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+            <Button
+                android:id="@+id/btn_cancel"
+                android:text="取消"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
